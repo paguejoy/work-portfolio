@@ -30,11 +30,21 @@ inquiryForm.addEventListener("submit", (e) => {
 		console.log(result);
 
 		if(result){
-			alert("Message has been sent.");
+			Swal.fire({
+			  title: 'Message sent!',
+			  text: 'Thank you for your interest to work with me. I\'ll get back to you shortly.',
+			  icon: 'success',
+			   button: "Okay"
+			})
 
-			window.location.replace("./index.html");
+			// window.location.replace("./index.html");
 		} else {
-			alert("Something went wrong");
+			Swal.fire({
+			  title: 'Something went wrong',
+			  text: 'try again',
+			  icon: 'error',
+			  button: "Okay"
+			})
 		}
 
 	})
