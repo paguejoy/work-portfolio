@@ -1,116 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
+/*@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');*/
 
 *{
 	margin: 0;
 	padding: 0;
 	font-family: 'Public Sans', sans-serif;
 	color: black;
+	/*font-weight: 50px;*/
 }
-
-h1, h2, h3, h4, h5, h6 {
-	/*color: #495d43;*/
-}
-
-.navbar-brand{
-	font-size: 40px;
-}
-
-
-.jumbotron {
-	height: 80vh;
-
-}
-
-.title {
-	font-family: 'Sofia', cursive;
-}
-
-.fs{
-	font-family: 'Sofia', cursive;
-}
-
-span {
-  text-shadow: 2px 2px;
-}
-
-
+/*
 .parallax {
-	background-image: url(./../images/flowers.jpg);
-	height: 50vh;
+	background-image: url(./../images/bg.jpeg);
+	height: 60vh;
 	background-attachment: fixed;
-	background-position: center;
+
 	background-repeat: no-repeat;
 	background-size: cover;
+}*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'PT Sans', sans-serif;
+	font-weight: bold;
 }
 
-.h1title{
-	background-color: #fff5e9;
+.jumbotron, .footer {
+	background-image: url("./../images/about/rainbow.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/*opacity: 0.5;*/
 }
 
-#about{
-	background-color: #fff5e9;
-}
-
-.aboutInfo {
-	background-color: #f6c5b8;
-}
-
-.profilePic {
-	width: 300px;
-	height: 300px;
-}
-
-.btn{
-	background-color: #fff59e;
-}
-
-.submit-btn {
-	background-color: #fff59e;
-}
-
-.row {
-	margin: 0;
-}
-
-.workExp {
-	background-color: #f6c5b8;
-}
-
-#contact {
-	background-color: #fff5e9;
-}
-
-footer {
-	background-color: #fff5e9;
-}
-
-i {
-	font-size: 40px;
-/*	margin-left: 20px;
-	margin-right: 10px;*/
-}
-
-.fa-paper-plane {
-	font-size: 20px;
-}
-
-.fa-viber {
-	font-size: 20px;
-}
-
-.fa-envelope-open-text {
-	font-size: 20px;
-}
-
-.fa-facebook {
-
-}
-
-.fa-instagram-square {
-
+.btnn {
+	background-color: #9999ff;
 }
 
 a {
@@ -119,163 +42,200 @@ a {
 
 @media (min-width: 300px){
 
-	.navbar-collapse {
-		display: flex;
-		justify-content: flex-start;
+	/*landing*/
+	.jumbotron{
+		height: 100vh;
+		margin-bottom: 0;
+
 	}
 
-	.display-4{
-		font-size: 33px;
-		
+	.jumbotron-container{
+		padding: 80px;
+	}
+
+	.name{
+		font-size: 50px;
 	}
 
 	.title{
-		font-size: 50px;
-		text-align: center;
-	}
-
-	.fs{
-		font-size: 30px;
-		text-align: center;
-	}
-
-	blockquote p {
-			font-family: 'Handlee', cursive;
-	    font-size: 20px;
-	    text-shadow: 4px 4px 4px #aaa;
-			margin-top: 40px;
-			margin-bottom: 5px;
-	}
-
-	.blockquote-footer{
 		font-size: 20px;
 	}
 
-	.btnn{
-		text-align: center;
+	.first {
+		margin-top: 70px;
 	}
 
-	.wrapper{
-		margin: 30px 0 0 0;
+
+	/*about me*/
+
+	.aboutTitle{
+		font-size: 40px;
+		padding: 25px 0;
+		text-decoration: underline;
+    text-underline-position: under;
 	}
 
-	.colImg {
-		margin: 15px 0;
+	.about-title{
+		font-size: 20px;
+		font-weight: bold;
+		color: black;
 	}
 
-	#about{
-		margin: 0 20px;
+	.about-description {
+		font-weight: bold;
+		color: black;
 	}
 
-	.fa-arrow-up {
-		font-size: 15px;
-		margin: 10px;
+	hr{
+		margin-top: 60px;
 	}
+
+	.school-name{
+		margin-top: 60px;
+	}
+
+	.tools-name{
+		font-size: 30px;
+		margin-top: 60px;
+		margin-bottom: 40px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+	}
+
+	/*work experience*/
+
+	.accordion{
+		margin: 0 10px;
+	}
+
+	.workTitle {
+		font-size: 40px;
+		margin: 50px 10px;
+	}
+
+
+	/*projects*/
+
+	.projectTitle {
+		font-size: 40px;
+		margin: 50px 10px;
+	}
+
+	/*Contact*/
+	.contactTitle{
+		margin: 30px 0;
+	}
+
+	.form-col{
+		padding: 0;
+	}
+
+	#inquiryForm{
+		margin: 0 12px;
+	}
+
+	.connect-col {
+		padding: 5px
+	}
+
 }
 
 
-@media (min-width: 700px){
+@media (min-width: 768px){
+
+	/*landing*/
+	.jumbotron{
+		height: 100vh;
+	}
+
+	.jumbotron-container{
+		padding-top: 15px;
+	}
+
+	.name{
+		font-size: 50px;
+	}
+
+	.title{
+		font-size: 20px;
+	}
+
+	#carouselExampleControls{
+		margin-top: 50px;
+	}
+
+	.first {
+		margin-top: 10px;
+	}
+
+
+	/*work experience*/
+
+	.accordion{
+		margin: 0 80px;
+	}
+
+	.workTitle {
+		font-size: 40px;
+		margin: 50px 10px;
+	}
+
+
+	/*projects*/
+	.proj-row{
+		margin: 0 20px;
+	}
+	
+
+	/*Contact*/
+	.contactTitle{
+		margin: 30px 0;
+	}
+
+	.form-col{
+		padding: 0;
+	}
+
+	#inquiryForm{
+		margin: 0 12px;
+	}
+
+	.connect-col {
+		padding: 20px
+	}
+
+}
+
+@media (min-width: 992px){
 
 	.navbar-collapse {
 		display: flex;
 		justify-content: flex-end;
+		font-size: 25px;
 	}
 
-	.display-4{
-		font-size: 50px;
-		
+	.landing-large{
+		margin-top: 35px;
 	}
 
-	.title{
-		font-size: 80px;
-		text-align: center;
+	.landing-img{
+
 	}
 
-	.fs{
-		font-size: 30px;
-		text-align: center;
+	.second {
+		margin-top: 35px;
 	}
 
-	blockquote p {
-			font-family: 'Handlee', cursive;
-	    font-size: 20px;
-	    text-shadow: 4px 4px 4px #aaa;
-			margin-top: 40px;
-			margin-bottom: 5px;
+	.second-desc {
+		margin-top: 20px;
 	}
 
-	.blockquote-footer{
-		font-size: 20px;
-	}
 
-	.btnn{
-		text-align: center;
-	}
 
-	.wrapper{
-		margin: 30px 0 0 0;
-	}
+	/*contact*/
 
-	.colImg {
-		margin: 15px 0;
-	}
-
-	#about{
-		margin: 0 20px;
-	}
-
-	.fa-arrow-up {
-		font-size: 15px;
-		margin: 10px;
-	}
-}
-
-@media (min-width: 900px){
-	.display-4{
-		font-size: 65px;
-		
-	}
-
-	.title{
-		font-size: 90px;
-		text-align: center;
-	}
-
-	.fs{
-		font-size: 30px;
-		text-align: center;
-	}
-
-	blockquote p {
-			font-family: 'Handlee', cursive;
-	    font-size: 20px;
-	    text-shadow: 4px 4px 4px #aaa;
-			margin-top: 40px;
-			margin-bottom: 5px;
-	}
-
-	.blockquote-footer{
-		font-size: 20px;
-	}
-
-	.btnn{
-		text-align: center;
-	}
-
-	.wrapper{
-		margin: 50px 0 30px 0;
-	}
-
-	.colImg {
-		margin: 15px 0;
-	}
-
-	#about{
-		margin: 0 20px;
-	}
-
-	.fa-arrow-up {
-		font-size: 15px;
-		margin: 10px;
+	footer {
+		padding-top: 40px;
 	}
 }
