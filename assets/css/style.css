@@ -112,6 +112,8 @@ a {
 	.workTitle {
 		font-size: 40px;
 		margin: 50px 10px;
+		text-decoration: underline;
+    text-underline-position: under;
 	}
 
 
@@ -120,6 +122,8 @@ a {
 	.projectTitle {
 		font-size: 40px;
 		margin: 50px 10px;
+		text-decoration: underline;
+    text-underline-position: under;
 	}
 
 	/*Contact*/
@@ -179,6 +183,8 @@ a {
 	.workTitle {
 		font-size: 40px;
 		margin: 50px 10px;
+		text-decoration: underline;
+    text-underline-position: under;
 	}
 
 
@@ -231,6 +237,10 @@ a {
 		margin-top: 20px;
 	}
 
+	/*about me*/
+	#about {
+		margin-top: 60px;
+	}
 
 
 	/*contact*/
