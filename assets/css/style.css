@@ -1,14 +1,13 @@
 
-/*@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');*/
-
+@import url('https://fonts.googleapis.com/css2?family=Padauk:wght@700&display=swap');
 *{
 	margin: 0;
 	padding: 0;
-	font-family: 'Public Sans', sans-serif;
+	font-family: 'Padauk', sans-serif;
 	color: black;
-	/*font-weight: 50px;*/
+	font-size: 20px;
 }
 /*
 .parallax {
@@ -21,8 +20,7 @@
 }*/
 
 h1, h2, h3, h4, h5, h6 {
-	font-family: 'PT Sans', sans-serif;
-	font-weight: bold;
+	font-family: 'Anton', sans-serif;
 }
 
 .jumbotron, .footer {
@@ -150,11 +148,11 @@ a {
 
 	/*landing*/
 	.jumbotron{
-		height: 100vh;
+		height: 110vh;
 	}
 
 	.jumbotron-container{
-		padding-top: 15px;
+		/*padding-top: 10px;*/
 	}
 
 	.name{
@@ -173,6 +171,19 @@ a {
 		margin-top: 10px;
 	}
 
+	#about{
+		margin-top: 50px;
+	}
+
+	.carousel-inner{
+		height: 400px;
+	}
+
+	.row-about{
+		display: flex;
+		justify-content: center;
+		margin-top: 10px;
+	}
 
 	/*work experience*/
 
@@ -211,6 +222,11 @@ a {
 		padding: 20px
 	}
 
+	.footer {
+		padding-top: 50px;
+		margin-top: 50px;
+	}
+
 }
 
 @media (min-width: 992px){
@@ -242,6 +258,9 @@ a {
 		margin-top: 60px;
 	}
 
+	.carousel-inner{
+		height: 400px;
+	}
 
 	/*contact*/
 
